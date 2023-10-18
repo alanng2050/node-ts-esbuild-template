@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'sharefile-api',
+      name: 'ts-build-template',
       script: './out/index.js',
     },
   ],

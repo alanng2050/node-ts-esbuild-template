@@ -19,6 +19,9 @@ nodemon({
   script: './out/index.js',
   ext: 'js json',
   watch: ['./out/index.js'],
+  env: {
+    NODE_ENV: 'development',
+  },
 })
 
 nodemon
