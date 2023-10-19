@@ -1,6 +1,6 @@
 {
   "name": "@alan-ng/ts-esbuild",
-  "version": "1.0.3",
+  "version": "1.0.16",
   "description": "Simple template that includes all necessary configuratio eslint, prettier, typescript, and esbuild",
   "keywords": [],
   "author": "Alan",

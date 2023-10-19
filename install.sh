@@ -1,21 +1,26 @@
 #!/bin/bash
 
+source_dir="$( dirname "${BASH_SOURCE[0]}" )/../@alan-ng/ts-esbuild/source/"
 if [[ "$1" == "" ]]
 then
-  read -p 'Enter your project name: ' PROJECT_NAME
+  read -p 'Enter your project name: ' project_name
 else
-  PROJECT_NAME=$1
+  project_name=$1
 fi
 
 echo "Creating the project..."
+cp -r $source_dir $project_name
 
-mkdir $PROJECT_NAME
-cd $PROJECT_NAME | cp -r ./source/ $PROJECT_NAME
+cd $project_name
+touch .gitignore
+echo node_modules >> .gitignore
+echo built >> .gitignore
+echo out >> .gitignore
 
-
-echo "Npm install..."
-cd $PROJECT_NAME && npm install
+echo "Running npm install..."
+npm install
+git init
 
 
 echo "Done."
-echo "To run your project: cd $PROJECT_NAME && npm run dev"
+echo "To run your project: cd $project_name && npm run dev"
