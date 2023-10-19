@@ -10,12 +10,11 @@ fi
 
 echo "Creating the project..."
 cp -r $source_dir $project_name
+cp -r $source_dir"../README.md" $project_name
 
 cd $project_name
-touch .gitignore
-echo node_modules >> .gitignore
-echo built >> .gitignore
-echo out >> .gitignore
+git init
+mv gitignore .gitignore
 
 echo "Running npm install..."
 npm install
