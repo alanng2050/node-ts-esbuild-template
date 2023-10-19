@@ -1,9 +1,13 @@
 {
   "name": "@alan-ng/ts-esbuild",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Simple template that includes all necessary configuratio eslint, prettier, typescript, and esbuild",
   "keywords": [],
   "author": "Alan",
   "license": "ISC",
-  "bin": "./install.sh"
+  "bin": "./install.sh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alanng2050/ts-esbuild"
+  }
 }
