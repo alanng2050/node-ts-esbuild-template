@@ -8,4 +8,5 @@ await esbuild.build({
   target: 'node18',
   platform: 'node',
   minify: true,
+  packages: "external"
 })
