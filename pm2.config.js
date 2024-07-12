@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'ts-build-template',
+      name: 'hello',
       script: './out/index.js',
     },
   ],

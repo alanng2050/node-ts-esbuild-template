@@ -5,7 +5,7 @@ await esbuild.build({
   entryPoints: ['./src/**/*.ts'],
   outdir: 'out',
   bundle: true,
-  target: 'node18',
+  target: 'node20',
   platform: 'node',
   minify: true,
   packages: "external"
